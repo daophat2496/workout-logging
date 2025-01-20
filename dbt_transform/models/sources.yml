@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw_data
+    schema: raw_data
+
+    tables:
+      - name: activities
+      - name: activity_details
+      - name: gears
