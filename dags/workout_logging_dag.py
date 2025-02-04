@@ -3,6 +3,7 @@ from airflow import DAG
 from dlt.common import pendulum
 from dlt.helpers.airflow_helper import PipelineTasksGroup
 from airflow.operators.python_operator import PythonOperator
+from airflow.operators.bash_operator import BashOperator
 import os
 from cosmos import DbtTaskGroup, ProjectConfig, ExecutionConfig, ProfileConfig
 from cosmos.profiles import GoogleCloudServiceAccountDictProfileMapping
@@ -13,7 +14,6 @@ DBT_PROJECT_PATH = f"{os.environ['AIRFLOW_HOME']}/dbt_transform"
 default_task_args = {
     "owner": "airflow"
     , "depends_on_past": False
-    , "email": "daophat2496@gmnail.com"
     , "retries": 0
 }
 
@@ -54,6 +54,9 @@ with DAG(
         , profile_config=profile_config
         , project_config=ProjectConfig(DBT_PROJECT_PATH)
         , execution_config=execution_config
+        # , operator_args={
+        #     "vars": '{"my_name": {{ params.my_name }} }',
+        # }
     )
 
     ingest_strava_data >> dbt_run
