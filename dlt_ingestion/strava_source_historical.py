@@ -3,7 +3,7 @@ from dlt.sources.helpers.rest_client import RESTClient
 from dlt.sources.helpers.rest_client.auth import BearerTokenAuth
 from dlt.sources.helpers.rest_client.paginators import PageNumberPaginator
 from dlt_ingestion.strava_helpers.auth import get_access_token
-import dlt_ingestion.helpers.util as Util
+# import dlt_ingestion.helpers.util as Util
 
 @dlt.source
 def strava_source():
@@ -16,29 +16,18 @@ def strava_source():
 
     @dlt.resource(write_disposition="merge", primary_key="id", max_table_nesting=0)
     def activities():
-        # Load 7 days activities in order to capture updated activities
-        # Strava does not provide updated_at-like field
-        from_epoch = Util.get_sod_n_days_from_now(-7)
-        yield from client.paginate(f"/athlete/activities?per_page=10&after={from_epoch}")
+        # from_epoch = Util.get_sod_n_days_from_now(-7)
+        yield from client.paginate(f"/athlete/activities?per_page=10")
 
     @dlt.transformer(data_from=activities, write_disposition="merge", primary_key="id")
     def activity_details(activities):
         for activity in activities:
+            if activity['id'] is None:
+                continue
             res = client.get(f"/activities/{activity['id']}?include_all_efforts=false")
             yield res.json()
-    
-    @dlt.transformer(data_from=activities, write_disposition="merge", primary_key="id", max_table_nesting=0)
-    def gears(activities):
-        for activity in activities:
-            if activity["gear_id"] is None:
-                continue
 
-            res = client.get(f"/gear/{activity['gear_id']}")
-            res.raise_for_status()
-            print(res.json())
-            yield res.json()
-
-    return [activities, activity_details, gears]
+    return [activities, activity_details]
 
 def load_strava_activities():
     pipeline = dlt.pipeline(

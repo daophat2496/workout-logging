@@ -1,83 +1,92 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" version="26.0.8">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36" version="26.0.10">
   <diagram name="Page-1" id="sstK3LPBZs76cxe1MUk0">
-    <mxGraphModel dx="1900" dy="626" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2284" dy="746" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FgQnUYBd0hRZZaAnY5gW-1" target="FgQnUYBd0hRZZaAnY5gW-6">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="FgQnUYBd0hRZZaAnY5gW-1" target="FgQnUYBd0hRZZaAnY5gW-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-1" value="Activity Hub" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="HBNc3b7bb8rVZ9Hz6i1a-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FgQnUYBd0hRZZaAnY5gW-1" target="HBNc3b7bb8rVZ9Hz6i1a-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-1" value="Activity Hub" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="125" y="140" width="210" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-19" value="Workout activities&lt;div&gt;(running, cycling, activity, ....)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="FgQnUYBd0hRZZaAnY5gW-1">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-19" value="Workout activities&lt;div&gt;(running, cycling, activity, ....)&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FgQnUYBd0hRZZaAnY5gW-1" vertex="1">
           <mxGeometry x="15" y="35" width="180" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-2" value="Activity Equipment Link" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-2" value="Activity Equipment Link" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="425" y="140" width="200" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-25" value="Relationship betwee&lt;div&gt;activity and equipment&lt;div&gt;(activity uses equipment(s))&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="FgQnUYBd0hRZZaAnY5gW-2">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-25" value="Relationship betwee&lt;div&gt;activity and equipment&lt;div&gt;(activity uses equipment(s))&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FgQnUYBd0hRZZaAnY5gW-2" vertex="1">
           <mxGeometry x="15" y="35" width="170" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FgQnUYBd0hRZZaAnY5gW-3" target="FgQnUYBd0hRZZaAnY5gW-5">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="FgQnUYBd0hRZZaAnY5gW-3" target="FgQnUYBd0hRZZaAnY5gW-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FgQnUYBd0hRZZaAnY5gW-3" target="FgQnUYBd0hRZZaAnY5gW-7">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="FgQnUYBd0hRZZaAnY5gW-3" target="FgQnUYBd0hRZZaAnY5gW-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-3" value="Equipment Hub" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-3" value="Equipment Hub" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="720" y="140" width="200" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-21" value="Essensial equipment&lt;div&gt;used in an activity&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="FgQnUYBd0hRZZaAnY5gW-3">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-21" value="Essensial equipment&lt;div&gt;used in an activity&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FgQnUYBd0hRZZaAnY5gW-3" vertex="1">
           <mxGeometry x="35" y="35" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-4" value="Activity Running Sat" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-4" value="Activity Running Sat" style="swimlane;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="130" y="320" width="200" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-20" value="Detail information&lt;div&gt;of running activities&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="FgQnUYBd0hRZZaAnY5gW-4">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-20" value="Detail information&lt;div&gt;of running activities&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FgQnUYBd0hRZZaAnY5gW-4" vertex="1">
           <mxGeometry x="35" y="35" width="130" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-5" value="Equipment Shoe Sat" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-5" value="Equipment Shoe Sat" style="swimlane;whiteSpace=wrap;html=1;startSize=23;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="720" y="320" width="200" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-23" value="Information about shoes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="FgQnUYBd0hRZZaAnY5gW-5">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-23" value="Information about shoes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FgQnUYBd0hRZZaAnY5gW-5" vertex="1">
           <mxGeometry x="25" y="45" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-6" value="Activity Cycling Sat" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="-150" y="140" width="200" height="110" as="geometry" />
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-6" value="Activity Cycling Sat" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="-220" y="60" width="200" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-26" value="Detail information&lt;div&gt;of cycling activity&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="FgQnUYBd0hRZZaAnY5gW-6">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-26" value="Detail information&lt;div&gt;of cycling activity&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FgQnUYBd0hRZZaAnY5gW-6" vertex="1">
           <mxGeometry x="40" y="35" width="120" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-7" value="Equipment Bike Sat" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-7" value="Equipment Bike Sat" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="990" y="140" width="200" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-24" value="Information about bikes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="FgQnUYBd0hRZZaAnY5gW-7">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-24" value="Information about bikes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="FgQnUYBd0hRZZaAnY5gW-7" vertex="1">
           <mxGeometry x="25" y="40" width="150" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FgQnUYBd0hRZZaAnY5gW-1" target="FgQnUYBd0hRZZaAnY5gW-4">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="FgQnUYBd0hRZZaAnY5gW-1" target="FgQnUYBd0hRZZaAnY5gW-4" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="280" as="sourcePoint" />
             <mxPoint x="450" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-12" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FgQnUYBd0hRZZaAnY5gW-1" target="FgQnUYBd0hRZZaAnY5gW-2">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-12" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="FgQnUYBd0hRZZaAnY5gW-1" target="FgQnUYBd0hRZZaAnY5gW-2" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="400" y="280" as="sourcePoint" />
             <mxPoint x="450" y="230" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-14" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FgQnUYBd0hRZZaAnY5gW-2" target="FgQnUYBd0hRZZaAnY5gW-3">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-14" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="FgQnUYBd0hRZZaAnY5gW-2" target="FgQnUYBd0hRZZaAnY5gW-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="630" y="250" as="sourcePoint" />
             <mxPoint x="680" y="200" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-27" value="Added" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-27" value="Added" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="50" y="10" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FgQnUYBd0hRZZaAnY5gW-28" value="To be added" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+        <mxCell id="FgQnUYBd0hRZZaAnY5gW-28" value="To be added" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="50" y="50" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="HBNc3b7bb8rVZ9Hz6i1a-1" value="Activity Walking Sat" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-220" y="230" width="200" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="HBNc3b7bb8rVZ9Hz6i1a-2" value="Detail information&lt;div&gt;of walking activity&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="HBNc3b7bb8rVZ9Hz6i1a-1">
+          <mxGeometry x="40" y="35" width="120" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -18,18 +18,18 @@ default_task_args = {
 }
 
 with DAG(
-    dag_id = "workout_logging_dag"
-    , schedule_interval= '@daily'
+    dag_id = "workout_logging_historical_dag"
+    , schedule=None
     , start_date=pendulum.datetime(2025, 1, 1)
     , catchup=False
     , max_active_runs=1
     , default_args=default_task_args
 ):
 
-    from dlt_ingestion.strava_source import load_strava_activities
+    from dlt_ingestion.strava_source_historical import load_strava_activities
 
     ingest_strava_data = PythonOperator(
-        task_id="ingest_strava_data"
+        task_id="ingest_strava_historical_data"
         , python_callable=load_strava_activities
     )
 
