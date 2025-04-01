@@ -16,5 +16,5 @@ SELECT
     , 'm/s' AS activity_average_speed_unit
     , ad.moving_time / 60 / ad.distance * 1000 AS activity_average_pace
     , 'min/km' AS activity_average_pace_unit
-FROM {{ source("raw_data", "activity_details") }} ad 
+FROM {{ source("strava_raw_data", "activity_details") }} ad 
 WHERE ad.sport_type = 'Run'

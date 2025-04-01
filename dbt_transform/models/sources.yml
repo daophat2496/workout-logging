@@ -1,8 +1,8 @@
 version: 2
 
 sources:
-  - name: raw_data
-    schema: raw_data
+  - name: strava_raw_data
+    schema: strava_raw_data
 
     tables:
       - name: activities
